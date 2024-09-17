@@ -1,6 +1,5 @@
 package org.launchcode;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Main {
@@ -11,9 +10,11 @@ public class Main {
 
 	MenuItem burger = new MenuItem("Burger", 5.99, "Main course", "Cheesy burger", true, false);
     items.add(burger);
+    MenuItem pizza = new MenuItem("Pizza", 10.99, "Main course", "Sausage pizza", false, false);
 
     Menu mainCourse = new Menu("Main Course", items);
-    
-    System.out.println(mainCourse.getItems());
+//    Menu appetizers = new Menu("Appetizers", items);
+
+    System.out.println(mainCourse.getItems().get(0).getName());
     }
 }
